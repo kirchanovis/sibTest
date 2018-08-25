@@ -14,7 +14,7 @@
           <ul class="about__list">
             <li class="about__elem">
               <div class="about__elem-icon">
-                <i class="icon-contact about__icon"></i>
+                <i class="icon-flag about__icon about__icon_big"></i>
               </div>
               <div class="about__elem-text">
                 <span>Простое и наглядное отслеживание этапов ваших публикаций</span>
@@ -22,7 +22,7 @@
             </li>
             <li class="about__elem" >
               <div class="about__elem-icon">
-                  <i class="icon-flag about__icon about__icon_big"></i>
+                  <i class="icon-folder about__icon"></i>
               </div>
               <div class="about__elem-text">
                 <span>Все справки, выходные данные, дипломы и сертификаты под рукой</span>
@@ -30,7 +30,7 @@
             </li>
             <li class="about__elem" >
               <div class="about__elem-icon">
-                <i class="icon-note about__icon"></i>
+                <i class="icon-rich about__icon"></i>
               </div>
               <div class="about__elem-text">
                 <span>Скидки на публикации до 25% для повторных клиентов</span>
@@ -38,7 +38,7 @@
             </li>
             <li class="about__elem" >
               <div class="about__elem-icon">
-                <i class="icon-rich about__icon"></i>
+                <i class="icon-note about__icon"></i>
               </div>
               <div class="about__elem-text">
                 <span>Отображение полного списка работ, опубликованных в «СибАК»</span>
@@ -46,7 +46,7 @@
             </li>
             <li class="about__elem" >
               <div class="about__elem-icon">
-                <i class="icon-rich about__icon"></i>
+                <i class="icon-contact about__icon"></i>
               </div>
               <div class="aboutElem__text">
                 <span>Упрощенное заполнение заявок на научные публикации</span>
@@ -54,20 +54,28 @@
             </li>
           </ul>
           <div class="about__footer">Мы будем и дальше развивать личный кабинет дополняя его функции, для более быстрой и комфортной работы с сайтом.</div>
-          <div class="about__footer">Если у вас возникают трудности, вопросы или есть предложения — <a href="#">напишите нам</a>.</div>
+          <div class="about__footer">Если у вас возникают трудности, вопросы или есть предложения — <a class="about__footer-link" href="#">напишите нам</a>.</div>
           <div class="about__footer">Мы будем благодарны за ваше мнение</div>
         </div>
         <div class="rightModal auth">
           <div class="auth__title">Личный кабинет<span class="auth__title_sq">(beta)</span></div>
-          <p class="auth__input">Войдите  или  <a class="auth__input-link" href="#">Зарегистрируйтесь</a></p>
+          <p class="auth__input"><span class="auth__input-nolink">Войдите</span>  или  <a class="auth__input-link" href="#">Зарегистрируйтесь</a></p>
           <form class="form" action="">
-            <label class="form__label" for="login">Введите e-mail</label>
-            <input class="form__text" type="text" name="login" id="login">
-            <label class="form__label" for="password">Введите пароль</label>
-            <input class="form__text" type="text" name="password" id="password">
-            <input class="form__checkbox" type="checkbox" checked name="remember" id="remember">
-            <label class="form__label" for="remember">Запомнить меня</label>
-            <input class="form__submit" type="submit" value="Войти">
+            <div class="form_elem">
+                <label class="form__label" for="login">Введите e-mail</label>
+                <input class="form__text" type="text" name="login" id="login">
+            </div>
+            <div class="form_elem">
+                <label class="form__label" for="password">Введите пароль</label>
+                <input class="form__text" type="text" name="password" id="password">
+              </div>
+              <div class="form_elem">
+                  <input class="form__checkbox" type="checkbox" checked name="remember" id="remember">
+                  <label class="form__label" for="remember">Запомнить меня</label>
+                </div>
+                <div class="form_elem">
+                    <input class="form__submit" type="submit" value="Войти">
+                  </div>
           </form>
         </div>
       </div>

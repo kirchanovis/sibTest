@@ -3,8 +3,8 @@ $mainFamilyMedium:'helveticaneuecyr-medium';
 $mainFamilyBold:'HelveticaneuecyrBold';
 $aboutFamily:Verdana, Geneva, sans-serif;
 
-$CaptionSize:21px;
-$CaptionLH:30px;
+$CaptionSize:14px;
+$CaptionLH:18px;
 $CaptionWeight:400;
 $CaptionLS:0.05em;
 
@@ -14,6 +14,15 @@ $CaptionLS:0.05em;
   line-height: $CaptionLH;
   font-weight: $CaptionWeight;
   letter-spacing: $CaptionLS;
+}
+
+@mixin aboutItalic {
+  font-family: $aboutFamily;
+  font-size: $CaptionSize;
+  line-height: $CaptionLH;
+  font-weight: $CaptionWeight;
+  letter-spacing: $CaptionLS;
+  font-style: italic;
 }
 
 $aboutTitleSize:16px;
@@ -29,69 +38,42 @@ $aboutTitleLS:0.05em;
   letter-spacing: $aboutTitleLS;
 }
 
-$CommentSize:21px;
-$CommentLH:30px;
-$CommentWeight:600;
-$CommentLS:0.05em;
+$authTitleSize:20px;
+$authTitleLH:24px;
+$authTitleWeight:800;
 
-@mixin Comment {
-  font-family: $mainFontFamily;
-  font-size: $CommentSize;
-  line-height: $CommentLH;
-  font-weight: $CommentWeight;
-  letter-spacing: $CommentLS;
-  font-style: italic;
+@mixin authTitle {
+  font-family: $mainFamilyBold;
+  font-size: $authTitleSize;
+  line-height: $authTitleLH;
+  font-weight: $authTitleWeight;
 }
 
-$H4Size:16px;
-$H4LH:20px;
-$H4Weight:500;
-$H4LS:1.25;
+$authTitleSqSize:15px;
+$authTitleSqLH:20px;
+$authTitleSqWeight:400;
+$authTitleSqLS:0.05em;
 
-@mixin H4 {
-  font-family: $mainFontFamily;
-  font-size: $H4Size;
-  line-height: $H4LH;
-  font-weight: $H4Weight;
-  letter-spacing: $H4LS;
+@mixin authTitleSq {
+  font-family: $mainFamily;
+  font-size: $authTitleSqSize;
+  line-height: $authTitleSqLH;
+  font-weight: $authTitleSqWeight;
+  letter-spacing: $authTitleSqLS;
 }
 
-$SubSize:16px;
-$SubLH:24px;
-$SubWeight:400;
-$SubLS:0.05em;
-
-
-@mixin Sub {
-  font-family: $mainFontFamily;
-  font-size: $SubSize;
-  line-height: $SubLH;
-  font-weight: $SubWeight;
-  letter-spacing: $SubLS;
+@mixin authInput {
+  font-family: $mainFamilyBold;
+  font-size: $authTitleSqSize;
+  line-height: $authTitleSqLH;
+  font-weight: $authTitleSqWeight;
+  letter-spacing: $authTitleSqLS;
 }
 
-$mainSize:12px;
-$mainLH:18px;
-$mainWeight:500;
-$mainLS:0.05em;
-
-@mixin main {
-  font-family: $mainFontFamily;
-  font-size: $mainSize;
-  line-height: $mainLH;
-  font-weight: $mainWeight;
-  letter-spacing: $mainLS;
-}
-
-$simpleSize:12px;
-$simpleLH:18px;
-$simpleWeight:400;
-$simpleLS:0.05em;
-
-@mixin simple {
-  font-family: $mainFontFamily;
-  font-size: $simpleSize;
-  line-height: $simpleLH;
-  font-weight: $simpleWeight;
-  letter-spacing: $simpleLS;
+@mixin authLabel {
+  font-family: $mainFamily;
+  font-size: $authTitleSqSize;
+  line-height: $authTitleSqLH;
+  font-weight: $authTitleWeight;
+  letter-spacing: $authTitleSqLS;
 }
