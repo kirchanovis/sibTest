@@ -6,7 +6,7 @@ $aboutFamily:Verdana, Geneva, sans-serif;
 $CaptionSize:14px;
 $CaptionLH:18px;
 $CaptionWeight:400;
-$CaptionLS:0.05em;
+$CaptionLS:0.02em;
 
 @mixin aboutCaption {
   font-family: $aboutFamily;
@@ -40,7 +40,7 @@ $aboutTitleLS:0.05em;
 
 $authTitleSize:20px;
 $authTitleLH:24px;
-$authTitleWeight:800;
+$authTitleWeight:400;
 
 @mixin authTitle {
   font-family: $mainFamilyBold;
@@ -63,17 +63,16 @@ $authTitleSqLS:0.05em;
 }
 
 @mixin authInput {
-  font-family: $mainFamilyBold;
-  font-size: $authTitleSqSize;
-  line-height: $authTitleSqLH;
-  font-weight: $authTitleSqWeight;
-  letter-spacing: $authTitleSqLS;
-}
-
-@mixin authLabel {
   font-family: $mainFamily;
   font-size: $authTitleSqSize;
   line-height: $authTitleSqLH;
-  font-weight: $authTitleWeight;
+  font-weight: $authTitleSqWeight;
+}
+
+@mixin authLabel {
+  font-family: $mainFamilyBold;
+  font-size: $authTitleSqSize;
+  line-height: $authTitleSqLH;
+  font-weight: 400;
   letter-spacing: $authTitleSqLS;
 }
