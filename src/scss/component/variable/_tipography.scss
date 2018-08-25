@@ -16,6 +16,19 @@ $CaptionLS:0.05em;
   letter-spacing: $CaptionLS;
 }
 
+$aboutTitleSize:21px;
+$aboutTitleLH:30px;
+$aboutTitleWeight:400;
+$aboutTitleLS:0.05em;
+
+@mixin aboutTitle {
+  font-family: $mainFamilyBold;
+  font-size: $aboutTitleSize;
+  line-height: $aboutTitleLH;
+  font-weight: $aboutTitleWeight;
+  letter-spacing: $aboutTitleLS;
+}
+
 $CommentSize:21px;
 $CommentLH:30px;
 $CommentWeight:600;

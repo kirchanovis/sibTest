@@ -19,13 +19,30 @@
     opacity: 0.3;
     z-index: 1;
 }
-.aboutTitle{
-    color: #fff;
-}
-.aboutList{
-    list-style: none;
-}
-.aboutElem{
-    display: flex
+
+.about{
+    padding: 30px 20px;
+    &__title{
+        
+        color: #fff;
+    }
+    &__list{
+        list-style: none;
+        padding: 0; 
+    }
+    &__elem{
+        display: flex;
+        padding: 15px 0;
+    }
+    &__icon{
+        font-size: 32px;
+    }
+    &__elem-icon{
+        padding-right:25px; 
+    }
+    &__footer{
+        text-align: center;
+        padding: 10px 0; 
+    }
 }
   
