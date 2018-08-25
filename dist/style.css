@@ -1,0 +1,209 @@
+@charset "UTF-8";
+.leftModal {
+  flex: 1;
+  background-color: #ef823a;
+  flex-basis: 395px; }
+
+.rightModal {
+  flex: 1;
+  flex-basis: 395px;
+  background-color: #fff; }
+
+.modalBg {
+  position: fixed;
+  left: 0px;
+  margin: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 1; }
+
+.about {
+  padding: 30px 20px; }
+  .about__title {
+    font-family: "HelveticaneuecyrBold";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    letter-spacing: 0.05em;
+    color: #fff; }
+  .about__list {
+    list-style: none;
+    padding: 0; }
+  .about__elem {
+    color: #fff;
+    display: flex;
+    padding: 15px 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em; }
+  .about__icon {
+    color: #fff;
+    font-size: 36px; }
+    .about__icon_big {
+      font-size: 42px; }
+  .about__elem-icon {
+    padding-right: 25px; }
+  .about__footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-style: italic; }
+  .about__footer-link {
+    color: #fff; }
+
+.auth {
+  padding: 20px 25px; }
+  .auth__title {
+    color: #000;
+    font-family: "HelveticaneuecyrBold";
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400; }
+  .auth__title_sq {
+    color: #ef823a;
+    font-family: "helveticaneuecyr";
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    vertical-align: 15px; }
+  .auth__input {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: "helveticaneuecyr";
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 10px 0; }
+  .auth__input-nolink {
+    font-size: 18px; }
+  .auth__input-link {
+    font-size: 18px;
+    color: #ef823a; }
+
+.pass_visible {
+  text-decoration: none;
+  font-size: 24px;
+  position: absolute;
+  top: 40px;
+  right: 10px; }
+
+.form__elem {
+  margin: 0 0 10px 0;
+  position: relative; }
+  .form__elem_bottom {
+    margin-bottom: 20px; }
+
+.form__label {
+  color: #000;
+  font-family: "HelveticaneuecyrBold";
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  letter-spacing: 0.05em; }
+
+.form__label-checked {
+  font-family: "helveticaneuecyr";
+  font-size: 15px; }
+
+.form__text {
+  width: 96%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  margin: 10px 0;
+  padding: 0 0 0 4%;
+  font-size: 16px;
+  font-family: "Helveticaneuecyr"; }
+
+.form__submit {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 16px;
+  padding: 0 16px;
+  height: 40px;
+  border: none;
+  background: #cc5414;
+  color: #fff;
+  cursor: pointer; }
+
+.form__submit:hover {
+  background: #b04810; }
+
+/* Style 04*/
+.s4 input {
+  display: none; }
+
+.s4 input + label {
+  cursor: pointer;
+  position: relative;
+  padding-left: 28px; }
+
+.s4 input + label:before,
+.s4 input + label:after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s ease; }
+
+.s4 input + label:before {
+  left: 0;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0; }
+
+.s4 input:checked + label:before {
+  color: #fff;
+  content: '\2714';
+  display: flex;
+  align-items: center;
+  background: #ef823a;
+  justify-content: center;
+  font-weight: bolder;
+  border: 1px solid #ef823a; }
+
+.s4 input:checked {
+  font-weight: bolder;
+  background: #ef823a; }
+
+.errorLogin {
+  color: red; }
+
+.errorPassword {
+  color: red; }
+
+html,
+body {
+  height: 100%; }
+
+.wrap {
+  display: flex;
+  height: 100%; }
+
+.modal {
+  margin: auto;
+  flex-basis: 790px;
+  display: flex;
+  z-index: 2;
+  box-shadow: 0px 2px 5px 0px rgba(191, 190, 190, 0.004), 0px 2px 1px 0px rgba(145, 145, 145, 0.39);
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown; }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, -100%, 0px); }
+  100% {
+    opacity: 1;
+    transform: none; } }
+

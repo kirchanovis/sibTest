@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="modalBg"></div>
+      <div id="modal" class="modal">
+        <div class="leftModal about">
+          <div class="about__title">Личный кабинет это:</div>
+          <ul class="about__list">
+            <li class="about__elem">
+              <div class="about__elem-icon">
+                <i class="icon-flag about__icon about__icon_big"></i>
+              </div>
+              <div class="about__elem-text">
+                <span>Простое и наглядное отслеживание этапов ваших публикаций</span>
+              </div>
+            </li>
+            <li class="about__elem" >
+              <div class="about__elem-icon">
+                  <i class="icon-folder about__icon"></i>
+              </div>
+              <div class="about__elem-text">
+                <span>Все справки, выходные данные, дипломы и сертификаты под рукой</span>
+              </div>
+            </li>
+            <li class="about__elem" >
+              <div class="about__elem-icon">
+                <i class="icon-rich about__icon"></i>
+              </div>
+              <div class="about__elem-text">
+                <span>Скидки на публикации до 25% для повторных клиентов</span>
+              </div>
+            </li>
+            <li class="about__elem" >
+              <div class="about__elem-icon">
+                <i class="icon-note about__icon"></i>
+              </div>
+              <div class="about__elem-text">
+                <span>Отображение полного списка работ, опубликованных в «СибАК»</span>
+              </div>
+            </li>
+            <li class="about__elem" >
+              <div class="about__elem-icon">
+                <i class="icon-contact about__icon"></i>
+              </div>
+              <div class="aboutElem__text">
+                <span>Упрощенное заполнение заявок на научные публикации</span>
+              </div>
+            </li>
+          </ul>
+          <div class="about__footer">Мы будем и дальше развивать личный кабинет дополняя его функции, для более быстрой и комфортной работы с сайтом.</div>
+          <div class="about__footer">Если у вас возникают трудности, вопросы или есть предложения — <a class="about__footer-link" href="#">напишите нам</a>.</div>
+          <div class="about__footer">Мы будем благодарны за ваше мнение</div>
+        </div>
+        <div class="rightModal auth">
+          <div class="auth__title">Личный кабинет<span class="auth__title_sq">(beta)</span></div>
+          <p class="auth__input"><span class="auth__input-nolink">Войдите</span>  или  <a class="auth__input-link" href="#">Зарегистрируйтесь</a></p>
+          <form class="form" id="form">
+            <div class="form__elem">
+              <label class="form__label" for="login">Введите e-mail</label>
+              <input required class="form__text" type="text" name="login" id="login">
+              <span id="errorLogin" class="errorLogin"></span>
+            </div>
+            <div class="form__elem">
+              <label class="form__label" for="password">Введите пароль</label>
+              <input required class="form__text" type="password" name="password" id="password">
+              <a href="#" id="pass_visible" class="pass_visible"><i class="icon-eye"></i></a>
+              <span id="errorPassword" class="errorPassword"></span>
+            </div>
+            <div class="form__elem form__elem_bottom s4">
+              <input class="form__checkbox" id="remember" type="checkbox" />
+              <label class="form__label-checked" for="remember">Запомнить меня</label>  
+              <!--<input class="form__checkbox" type="checkbox" checked name="remember" id="remember">
+              <label class="form__label" for="remember">Запомнить меня</label>-->
+            </div>
+            <div class="form__elem">
+              <input class="form__submit" type="submit" value="Войти">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
